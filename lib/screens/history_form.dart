@@ -70,21 +70,15 @@ class _FormHistoryState extends State<FormHistory> {
     return Form(
       key: _formKey,
       child: Scaffold(
-          backgroundColor: CustomColors.whiteBack,
           appBar: AppBar(
-              backgroundColor: CustomColors.whiteBack,
-              title: const Text('Registrar Manutenção',
-                  style: TextStyle(
-                      fontSize: 18,
-                      color: Colors.black,
-                      fontFamily: 'Futura',
-                      decoration: TextDecoration.none))),
+            title: const Text('Registrar Manutenção'),
+          ),
           body: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: EdgeInsets.only(left: screenWidth/25, top: 45),
+                  padding: EdgeInsets.only(left: screenWidth / 25, top: 45),
                   child: const Text(
                     'Registro de Manutenção',
                     style: TextStyle(
@@ -95,7 +89,8 @@ class _FormHistoryState extends State<FormHistory> {
                 ),
                 Center(
                   child: Padding(
-                      padding: EdgeInsets.symmetric(vertical: 15, horizontal: screenWidth/25),
+                      padding: EdgeInsets.symmetric(
+                          vertical: 15, horizontal: screenWidth / 25),
                       child: ValueListenableBuilder(
                         valueListenable: maintenanceNameController,
                         builder: (BuildContext context, String value, _) {
@@ -136,7 +131,8 @@ class _FormHistoryState extends State<FormHistory> {
                       )),
                 ),
                 Padding(
-                  padding: EdgeInsets.symmetric(vertical: 15, horizontal: screenWidth/25),
+                  padding: EdgeInsets.symmetric(
+                      vertical: 15, horizontal: screenWidth / 25),
                   child: TextFormField(
                     validator: (value) {
                       if (emptyValidator(value)) {
@@ -160,7 +156,8 @@ class _FormHistoryState extends State<FormHistory> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.symmetric(vertical: 15, horizontal: screenWidth/25),
+                  padding: EdgeInsets.symmetric(
+                      vertical: 15, horizontal: screenWidth / 25),
                   child: TextFormField(
                     validator: (value) {
                       if (kmValidator(value, int.parse(carData.carKm))) {
@@ -184,7 +181,8 @@ class _FormHistoryState extends State<FormHistory> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.symmetric(vertical: 15, horizontal: screenWidth/25),
+                  padding: EdgeInsets.symmetric(
+                      vertical: 15, horizontal: screenWidth / 25),
                   child: TextFormField(
                     validator: (value) {
                       if (emptyValidator(value)) {
@@ -226,7 +224,7 @@ class _FormHistoryState extends State<FormHistory> {
                   ),
                 ),
                 SizedBox(
-                  height: screenHeight/10,
+                  height: screenHeight / 10,
                 )
               ],
             ),
@@ -236,7 +234,7 @@ class _FormHistoryState extends State<FormHistory> {
           floatingActionButton: ElevatedButton(
               style: ElevatedButton.styleFrom(
                   backgroundColor: CustomColors.whiteLess,
-                  fixedSize: Size(screenWidth/1.1, screenHeight/18)),
+                  fixedSize: Size(screenWidth / 1.1, screenHeight / 18)),
               onPressed: () {
                 final List<String> listAdd = [
                   maintenanceNameController.value,

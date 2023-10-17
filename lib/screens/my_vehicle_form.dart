@@ -68,16 +68,8 @@ class _FormVehicleState extends State<FormVehicle> {
     return Form(
       key: _formKey,
       child: Scaffold(
-        backgroundColor: CustomColors.whiteBack,
         appBar: AppBar(
-            iconTheme: const IconThemeData(color: Colors.black),
-            backgroundColor: CustomColors.whiteBack,
-            title: const Text('Cadastrar Veículo',
-                style: TextStyle(
-                    fontSize: 18,
-                    color: Colors.black,
-                    fontFamily: 'Futura',
-                    decoration: TextDecoration.none))),
+            title: const Text('Cadastrar Veículo')),
         body: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,

@@ -65,16 +65,8 @@ class _FormMaintenanceState extends State<FormMaintenance> {
     return Form(
       key: _formKey,
       child: Scaffold(
-        backgroundColor: CustomColors.whiteBack,
         appBar: AppBar(
-            iconTheme: const IconThemeData(color: Colors.black),
-            backgroundColor: CustomColors.whiteBack,
-            title: const Text('Agendar Manutenção',
-                style: TextStyle(
-                    fontSize: 18,
-                    color: Colors.black,
-                    fontFamily: 'Futura',
-                    decoration: TextDecoration.none))),
+            title: const Text('Agendar Manutenção')),
         body: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,

@@ -28,17 +28,10 @@ class _InitialScreenState extends State<InitialScreen> {
     double screenHeight = MediaQuery.of(context).size.height;
     double screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
-      backgroundColor: CustomColors.whiteBack,
       // NavBar é a barra de navegação lateral, onde mudamos as telas.
       drawer: const NavBar(),
       appBar: AppBar(
-        iconTheme: const IconThemeData(color: Colors.black),
-        title: const Text('Início',
-            style: TextStyle(
-                fontSize: 18,
-                color: Colors.black,
-                fontFamily: 'Futura',
-                decoration: TextDecoration.none)),
+        title: const Text('Início'),
         backgroundColor: CustomColors.yellowShell,
       ),
       body: SingleChildScrollView(

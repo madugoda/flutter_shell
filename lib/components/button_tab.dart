@@ -69,10 +69,6 @@ class _ButtonTabState extends State<ButtonTab> {
                   backgroundColor: CustomColors.whiteBack,
                   onPressed: () {
                     showModalBottomSheet(
-                        shape: const RoundedRectangleBorder(
-                            borderRadius: BorderRadius.vertical(top: Radius.circular(30))),
-                        backgroundColor: CustomColors.whiteBack,
-                        clipBehavior: Clip.antiAliasWithSaveLayer,
                       isScrollControlled: true,
                         context: context,
                         builder: (BuildContext context) {

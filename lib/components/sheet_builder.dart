@@ -32,9 +32,6 @@ class SheetCaller1 extends StatelessWidget {
       backgroundColor: CustomColors.whiteBack,
       onPressed: () {
         showModalBottomSheet(
-            shape: const RoundedRectangleBorder(
-                borderRadius: BorderRadius.vertical(top: Radius.circular(30))),
-            backgroundColor: CustomColors.whiteBack,
             isScrollControlled: true,
             context: context,
             builder: (BuildContext context) {
@@ -116,10 +113,6 @@ class SheetCaller2 extends StatelessWidget {
       backgroundColor: CustomColors.whiteBack,
       onPressed: () {
         showModalBottomSheet(
-            shape: const RoundedRectangleBorder(
-                borderRadius: BorderRadius.vertical(top: Radius.circular(30))),
-            backgroundColor: CustomColors.whiteBack,
-            clipBehavior: Clip.antiAliasWithSaveLayer,
             isScrollControlled: true,
             context: context,
             builder: (BuildContext context) {
@@ -227,10 +220,6 @@ class SheetCaller3 extends StatelessWidget {
       backgroundColor: CustomColors.whiteBack,
       onPressed: () {
         showModalBottomSheet(
-            shape: const RoundedRectangleBorder(
-                borderRadius: BorderRadius.vertical(top: Radius.circular(30))),
-            backgroundColor: CustomColors.whiteBack,
-            clipBehavior: Clip.antiAliasWithSaveLayer,
             isScrollControlled: true,
             context: context,
             builder: (BuildContext context) {

@@ -42,22 +42,14 @@ class _FormKmAttState extends State<FormKmAtt> {
     return Form(
       key: _formKey,
       child: Scaffold(
-        backgroundColor: CustomColors.whiteBack,
         appBar: AppBar(
-            iconTheme: const IconThemeData(color: Colors.black),
-            backgroundColor: CustomColors.whiteBack,
-            title: const Text('Atualizar Quilometragem',
-                style: TextStyle(
-                    fontSize: 18,
-                    color: Colors.black,
-                    fontFamily: 'Futura',
-                    decoration: TextDecoration.none))),
+            title: const Text('Atualizar Quilometragem')),
         body: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: EdgeInsets.only(left: screenWidth/25, top: 45),
+                padding: EdgeInsets.only(left: screenWidth / 25, top: 45),
                 child: const Text(
                   'Quilometragem Atual',
                   style: TextStyle(
@@ -67,7 +59,8 @@ class _FormKmAttState extends State<FormKmAtt> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.symmetric(vertical: 15, horizontal: screenWidth/25),
+                padding: EdgeInsets.symmetric(
+                    vertical: 15, horizontal: screenWidth / 25),
                 child: TextFormField(
                   cursorColor: CustomColors.purpleShell,
                   keyboardType: TextInputType.number,
@@ -76,7 +69,7 @@ class _FormKmAttState extends State<FormKmAtt> {
                   decoration: const InputDecoration(
                     focusedBorder: UnderlineInputBorder(
                         borderSide:
-                        BorderSide(color: CustomColors.purpleShell)),
+                            BorderSide(color: CustomColors.purpleShell)),
                     labelStyle: TextStyle(
                       fontSize: 14,
                       color: Colors.black54,
@@ -101,7 +94,7 @@ class _FormKmAttState extends State<FormKmAtt> {
         floatingActionButton: ElevatedButton(
             style: ElevatedButton.styleFrom(
                 backgroundColor: CustomColors.whiteLess,
-                fixedSize: Size(screenWidth/1.1, screenHeight/18)),
+                fixedSize: Size(screenWidth / 1.1, screenHeight / 18)),
             onPressed: () {
               if (_formKey.currentState!.validate()) {
                 CarDao().save(CarSpecs(
