@@ -208,7 +208,6 @@ class _FormHistoryState extends State<FormHistory> {
                         return 'Data Inválida. Use dd/mm/aaaa';
                       }
                     },
-                    keyboardType: TextInputType.datetime,
                     controller: maintenanceDateController,
                     cursorColor: CustomColors.purpleShell,
                     decoration: const InputDecoration(

@@ -223,10 +223,8 @@ class _ButtonTabState extends State<ButtonTab> {
               children: [
                 SheetCaller3(
                     herotag: 'filter',
-                    distToNew1: 0,
-                    isDateBased1: true,
-                    dateAdd1: 2,
-                    distToNew2: 15000,
+                    distToNew1: 10000,
+                    distToNew2: 10000,
                     distToNew3: 10000,
                     imageAvatar: 'assets/icons/filter.png',
                     textAvatar: 'Filtros',

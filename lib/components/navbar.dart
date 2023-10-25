@@ -29,13 +29,15 @@ class _NavBarState extends State<NavBar> {
       backgroundColor: CustomColors.whiteBack,
       child: ListView(
         children: [
-          ListTile(
-            leading: const Icon(Icons.drive_eta_rounded),
-            title: const Text('Cadastrar Veículo'),
-            onTap: () => Navigator.of(context).push(MaterialPageRoute(
-                builder: (context) =>
-                    FormVehicle(vehicleDataContext: context))),
-          ),
+          (carData.carName == '')
+              ? ListTile(
+                  leading: const Icon(Icons.drive_eta_rounded),
+                  title: const Text('Cadastrar Veículo'),
+                  onTap: () => Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) =>
+                          FormVehicle(vehicleDataContext: context))),
+                )
+              : const SizedBox.shrink(),
           ListTile(
             leading: const Icon(Icons.update),
             title: const Text('Atualizar Quilometragem'),

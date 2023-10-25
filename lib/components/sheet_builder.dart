@@ -374,7 +374,7 @@ class OutdatedBuilder extends StatelessWidget {
               : const SizedBox.shrink(),
           (breaksData != '')
               ? OutdatedParts(
-                  histData: camberData,
+                  histData: breaksData,
                   currentKm: currentKm,
                   distToNew: 35000,
                 )
@@ -411,14 +411,14 @@ class OutdatedBuilder extends StatelessWidget {
               ? OutdatedParts(
                   histData: filterfuelData,
                   currentKm: currentKm,
-                  distToNew: 15000,
+                  distToNew: 10000,
                 )
               : const SizedBox.shrink(),
           (filteroilData != '')
               ? OutdatedParts(
                   histData: filteroilData,
-                  isDateBased: true,
-                  yearsToNew: 2,
+                  currentKm: currentKm,
+                  distToNew: 10000,
                 )
               : const SizedBox.shrink(),
           (oilengineData != '')
